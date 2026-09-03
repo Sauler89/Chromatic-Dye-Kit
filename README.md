@@ -53,8 +53,6 @@ Chromatic Dye Kit uses dedicated artwork rather than inheriting graphics from it
 | **EET** | Winthrop **and** Ribald |
 | **IWD:EE** | Pomab — Easthaven (`EHPOMAB.STO`) |
 
-The item is added identified and as a single reusable copy.
-
 ## Installation
 
 1. Extract the archive into the game directory containing `chitin.key`.
@@ -71,9 +69,6 @@ To uninstall, run the same WeiDU installer again and choose the uninstall option
 - **IWD:EE**
 - No **EEex** dependency.
 - No **Infinity UI++** dependency.
-- Uses standard Enhanced Edition `ITEMDIAL.2DA` functionality and standard opcodes **7** and **321**.
-- Uses its own resource namespace: `SCDYE` / `SCD*`.
-- Generated helper resource names remain within the Infinity Engine's 8-character resref limit.
 
 ### IWDEE Tweaks and Fixes
 
