@@ -1,0 +1,11 @@
+# WeiDU runtime files
+Chromatic-Dye-Kit/backup/
+SETUP-CHROMATIC-DYE-KIT.DEBUG
+setup-Chromatic-Dye-Kit.debug
+WeiDU.log
+weidu.log
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.tmp
