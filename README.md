@@ -72,7 +72,7 @@ To uninstall, run the same WeiDU installer again and choose the uninstall option
 
 ### IWDEE Tweaks and Fixes
 
-Do **not** install this standalone mod together with component 10 of **IWDEE Tweaks and Fixes**.
+Do **not** install this standalone mod together with component #10 of **IWDEE Tweaks and Fixes**.
 
 The standalone installer blocks installation if the original component is already installed. If Chromatic Dye Kit is installed first, older versions of IWDEE Tweaks and Fixes cannot detect it, so component 10 should be skipped there as well.
 
