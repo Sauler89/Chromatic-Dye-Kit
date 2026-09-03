@@ -20,7 +20,7 @@ jobs:
       - name: Restore tested dialogue source
         shell: bash
         run: |
-          base64 --decode tools/scdye.d.gz.b64 | bzip2 --decompress --stdout > Chromatic-Dye-Kit/dialogs/scdye.d
+          tr -cd 'A-Za-z0-9+/=' < tools/scdye.d.gz.b64 | base64 --decode | bzip2 --decompress --stdout > Chromatic-Dye-Kit/dialogs/scdye.d
           echo 'a3533f5051429619cabcbc5ab0228dfe8c3459186377ce6e4e3a8965dfabebbb  Chromatic-Dye-Kit/dialogs/scdye.d' | sha256sum --check
 
       - name: Add WeiDU 251.00 Windows installer
@@ -29,6 +29,7 @@ jobs:
           curl --fail --location --retry 3 \
             'https://github.com/WeiDUorg/weidu/releases/download/v251.00/WeiDU-Windows-251.zip' \
             --output /tmp/weidu-windows.zip
+          echo 'a54c6198d6ebed8139793fcacb225500d563657c23fc775b840383f9750493d8  /tmp/weidu-windows.zip' | sha256sum --check
           mkdir -p /tmp/weidu-windows
           unzip -q /tmp/weidu-windows.zip -d /tmp/weidu-windows
           WEIDU_EXE="$(find /tmp/weidu-windows -type f -iname 'weidu.exe' -print -quit)"
@@ -51,4 +52,4 @@ jobs:
           git commit -m 'Add dialogue source and WeiDU installer'
           git push
 
-# Bootstrap helper: removed automatically after the generated files are committed.
+# Temporary bootstrap helper. It removes itself after a successful run.
