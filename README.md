@@ -7,6 +7,12 @@ A standalone WeiDU mod for **BG:EE, BG2:EE, EET, and IWD:EE** that adds a reusab
 
 The mod is based on the Chromatic Dye Kit originally released as component 10 of [IWDEE Tweaks and Fixes](https://github.com/Sauler89/IWDEE-Tweaks-and-Fixes).
 
+## In-game screenshot
+
+<p align="center">
+  <img src="images/chromatic-dye-kit-description.webp" alt="Chromatic Dye Kit item description in game" width="550">
+</p>
+
 ## Features
 
 Right-click the **Chromatic Dye Kit** in the inventory and choose **Customize** to recolor:
