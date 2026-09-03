@@ -5,7 +5,7 @@ Author: **Sauler89**
 
 A standalone WeiDU mod for **BG:EE, BG2:EE, EET, and IWD:EE** that adds a reusable **Chromatic Dye Kit** for changing character color ranges that are normally unavailable from the inventory screen.
 
-The mod is based on the Chromatic Dye Kit originally released as component 10 of [IWDEE Tweaks and Fixes](https://github.com/Sauler89/IWDEE-Tweaks-and-Fixes).
+The mod is based on the Chromatic Dye Kit originally released as component #10 of [IWDEE Tweaks and Fixes](https://github.com/Sauler89/IWDEE-Tweaks-and-Fixes).
 
 ## In-game screenshot
 
@@ -81,20 +81,6 @@ Do **not** install this standalone mod together with component 10 of **IWDEE Twe
 
 The standalone installer blocks installation if the original component is already installed. If Chromatic Dye Kit is installed first, older versions of IWDEE Tweaks and Fixes cannot detect it, so component 10 should be skipped there as well.
 
-## Runtime verification
-
-Version 1.0 has been runtime-tested on **EET**, including:
-
-- WeiDU installation
-- Winthrop placement
-- Ribald placement
-- inventory and store artwork
-- item description artwork
-- right-click **Customize** dialog
-- all supported color categories
-- Hair/Skin/All restore functions
-
-The IWD:EE implementation retains the gameplay mechanism of the original IWDEE Tweaks and Fixes component.
 
 ## Credits
 
