@@ -20,7 +20,7 @@ jobs:
       - name: Restore tested dialogue source
         shell: bash
         run: |
-          base64 --decode tools/scdye.d.gz.b64 | gzip --decompress --stdout > Chromatic-Dye-Kit/dialogs/scdye.d
+          base64 --decode tools/scdye.d.gz.b64 | bzip2 --decompress --stdout > Chromatic-Dye-Kit/dialogs/scdye.d
           echo 'a3533f5051429619cabcbc5ab0228dfe8c3459186377ce6e4e3a8965dfabebbb  Chromatic-Dye-Kit/dialogs/scdye.d' | sha256sum --check
 
       - name: Add WeiDU 251.00 Windows installer
