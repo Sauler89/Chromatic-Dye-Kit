@@ -13,7 +13,7 @@ The mod is based on the Chromatic Dye Kit originally released as component #10 o
   <img src="images/chromatic-dye-kit-description.webp" alt="Chromatic Dye Kit item description in game" width="550">
 </p>
 
-## Features
+## Description
 
 Right-click the **Chromatic Dye Kit** in the inventory and choose **Customize** to recolor:
 
