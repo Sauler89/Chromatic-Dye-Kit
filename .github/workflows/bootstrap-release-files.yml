@@ -4,7 +4,8 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'tools/scdye.d.gz.b64'
+      - 'tools/scdye.part0'
+      - 'tools/scdye.part1'
       - '.github/workflows/bootstrap-release-files.yml'
 
 permissions:
@@ -20,7 +21,7 @@ jobs:
       - name: Restore tested dialogue source
         shell: bash
         run: |
-          tr -cd 'A-Za-z0-9+/=' < tools/scdye.d.gz.b64 | base64 --decode | bzip2 --decompress --stdout > Chromatic-Dye-Kit/dialogs/scdye.d
+          cat tools/scdye.part0 tools/scdye.part1 | base64 --decode | bzip2 --decompress --stdout > Chromatic-Dye-Kit/dialogs/scdye.d
           echo 'a3533f5051429619cabcbc5ab0228dfe8c3459186377ce6e4e3a8965dfabebbb  Chromatic-Dye-Kit/dialogs/scdye.d' | sha256sum --check
 
       - name: Add WeiDU 251.00 Windows installer
@@ -41,7 +42,7 @@ jobs:
       - name: Commit release files and remove bootstrap helpers
         shell: bash
         run: |
-          rm -f tools/scdye.d.gz.b64
+          rm -f tools/scdye.d.gz.b64 tools/scdye.part0 tools/scdye.part1
           rm -f .github/workflows/bootstrap-release-files.yml
           rmdir tools 2>/dev/null || true
           rmdir .github/workflows 2>/dev/null || true
