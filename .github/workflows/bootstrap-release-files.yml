@@ -50,3 +50,5 @@ jobs:
           git add -A
           git commit -m 'Add dialogue source and WeiDU installer'
           git push
+
+# Bootstrap helper: removed automatically after the generated files are committed.
