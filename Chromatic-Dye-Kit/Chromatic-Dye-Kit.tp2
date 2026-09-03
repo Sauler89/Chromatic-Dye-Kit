@@ -1,0 +1,20 @@
+/*************************************************************************/
+// Chromatic Dye Kit 1.0
+// Standalone version of IWDEE Tweaks and Fixes component 10.
+/*************************************************************************/
+
+BACKUP ~Chromatic-Dye-Kit/backup~
+AUTHOR ~Sauler89~
+VERSION ~1.0~
+
+BEGIN ~Chromatic Dye Kit~ DESIGNATED 0
+LABEL ~chromatic_dye_kit~
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet iwdee~) ~This mod is only for BG:EE, BG2:EE, EET, or IWD:EE.~
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~ITEMDIAL.2DA~ ~ITEMDIAL.2DA is missing; the reusable item dialog cannot be installed.~
+REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~SW1H01.ITM~ ~SW1H01.ITM is missing; the Chromatic Dye Kit cannot be built.~
+REQUIRE_PREDICATE !(MOD_IS_INSTALLED ~IWDEE-Tweaks-and-Fixes/IWDEE-Tweaks-and-Fixes.tp2~ ~10~) ~IWDEE Tweaks and Fixes component 10 (Chromatic Dye Kit) is already installed. Uninstall it before installing the standalone mod.~
+REQUIRE_PREDICATE (!(GAME_IS ~bgee~) OR FILE_EXISTS_IN_GAME ~INN2616.STO~) ~INN2616.STO is missing; the Chromatic Dye Kit cannot be added to Winthrop's store.~
+REQUIRE_PREDICATE (!(GAME_IS ~bg2ee~) OR FILE_EXISTS_IN_GAME ~RIBALD.STO~) ~RIBALD.STO is missing; the Chromatic Dye Kit cannot be added to Ribald's store.~
+REQUIRE_PREDICATE (!(GAME_IS ~eet~) OR (FILE_EXISTS_IN_GAME ~INN2616.STO~ AND FILE_EXISTS_IN_GAME ~RIBALD.STO~)) ~EET requires both INN2616.STO and RIBALD.STO for Chromatic Dye Kit store placement.~
+REQUIRE_PREDICATE (!(GAME_IS ~iwdee~) OR FILE_EXISTS_IN_GAME ~EHPOMAB.STO~) ~EHPOMAB.STO is missing; the Chromatic Dye Kit cannot be added to Pomab's store.~
+INCLUDE ~Chromatic-Dye-Kit/components/dye_kit.tpa~
